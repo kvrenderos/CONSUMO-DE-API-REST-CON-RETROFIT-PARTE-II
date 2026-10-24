@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+        <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadlineSmall" android:layout_marginBottom="16dp" />
+        <EditText android:id="@+id/nombreInput" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" android:hint="@string/nombre" android:inputType="textPersonName|textCapWords"
+            android:maxLength="100" android:autofillHints="givenName" />
+        <EditText android:id="@+id/apellidoInput" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" android:hint="@string/apellido" android:inputType="textPersonName|textCapWords"
+            android:maxLength="100" android:autofillHints="familyName" />
+        <EditText android:id="@+id/edadInput" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" android:hint="@string/edad" android:inputType="number" android:maxLength="3"
+            android:autofillHints="" />
+        <ProgressBar android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" android:visibility="gone" />
+        <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp" android:accessibilityLiveRegion="polite" />
+        <Button android:id="@+id/retryButton" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/retry" android:visibility="gone" />
+        <Button android:id="@+id/saveButton" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/guardar" />
+        <Button android:id="@+id/cancelButton" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/cancelar" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <!-- Picasso 2.8 incluye soporte para notificaciones que esta app no usa.
+         Solo se carga en ImageView; se excluye exclusivamente ese diagnóstico
+         de la dependencia y se mantiene la comprobación para el código propio. -->
+    <issue id="NotificationPermission">
+        <ignore regexp="com\.squareup\.picasso\.RemoteViewsAction\.NotificationAction" />
+    </issue>
+</lint>
